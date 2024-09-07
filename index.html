@@ -40,16 +40,74 @@
             height: 152px; /* Mantener la altura del iframe */
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra opcional para un mejor estilo */
         }
+
+        #playButton {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #b69134;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000; 
+        }
+
+        #playButton:hover {
+            background-color: #9c7411;
+        }
     </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-nav" data-offset="100">
 
+
+    <button id="playButton">▶</button>
+    
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="audio/baby.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('backgroundAudio');
+
+        // Intenta reproducir el audio automáticamente al cargar la página
+        function attemptAutoPlay() {
+            audio.play().then(() => {
+                // Reproducción automática exitosa
+                playButton.innerHTML = '⏸'; // Cambia el ícono a pause
+            }).catch(() => {
+                // Reproducción automática fallida
+                playButton.innerHTML = '▶'; // Mantiene el ícono de play
+            });
+        }
+
+        // Llama a la función para intentar reproducir el audio
+        attemptAutoPlay();
+
+        // Agrega funcionalidad al botón para reproducir/pausar
+        playButton.addEventListener('click', function() {
+            if (audio.paused) {
+                audio.play();
+                playButton.innerHTML = '⏸'; // Cambia el ícono a pause
+            } else {
+                audio.pause();
+                playButton.innerHTML = '▶'; // Cambia el ícono a play
+            }
+        });
+    </script>
+
+    <!--Spotify
     <iframe class="floating-frame" src="https://open.spotify.com/embed/track/0SzvmWfOhoxZVGrmvb56YL?utm_source=generator&theme=0" 
             frameborder="0" allowfullscreen="" 
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
             loading="lazy">
     </iframe>
+    -->
 
     <!--loading start-->
     <div class="loader">
