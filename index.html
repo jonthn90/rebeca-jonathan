@@ -78,10 +78,8 @@
         // Intenta reproducir el audio automáticamente al cargar la página
         function attemptAutoPlay() {
             audio.play().then(() => {
-                // Reproducción automática exitosa
                 playButton.innerHTML = '⏸'; // Cambia el ícono a pause
             }).catch(() => {
-                // Reproducción automática fallida
                 playButton.innerHTML = '▶'; // Mantiene el ícono de play
             });
         }
@@ -97,6 +95,22 @@
             } else {
                 audio.pause();
                 playButton.innerHTML = '▶'; // Cambia el ícono a play
+            }
+        });
+
+        // Pausa la reproducción cuando la página pierde visibilidad
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                audio.pause();
+                playButton.innerHTML = '▶'; // Cambia el ícono a play cuando se pausa
+            }
+        });
+
+        // Reanuda la reproducción si la página vuelve a ser visible
+        document.addEventListener('visibilitychange', function() {
+            if (!document.hidden && !audio.paused) {
+                audio.play();
+                playButton.innerHTML = '⏸'; // Cambia el ícono a pause si se reanuda
             }
         });
     </script>
