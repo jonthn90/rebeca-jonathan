@@ -29,18 +29,6 @@
     <link rel="stylesheet" href="wedding/css/style.css">
 
     <style>
-        /* Estilo para hacer que el iframe esté flotante */
-        .floating-frame {
-            position: fixed; /* Fijar en la pantalla, no depende del scroll */
-            bottom: 10px; /* 10px de padding en la parte inferior */
-            left: 10px; /* 10px de padding en el lado izquierdo */
-            border-radius: 12px; /* Bordes redondeados como en tu código original */
-            z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
-            width: 300px; /* Ajustar el ancho deseado */
-            height: 152px; /* Mantener la altura del iframe */
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra opcional para un mejor estilo */
-        }
-
         #playButton {
             position: fixed;
             bottom: 20px;
@@ -53,7 +41,7 @@
             cursor: pointer;
             font-size: 16px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            z-index: 1000; 
+            z-index: 1000;
         }
 
         #playButton:hover {
@@ -66,7 +54,7 @@
 
 
     <button id="playButton">▶</button>
-    
+
     <audio id="backgroundAudio" autoplay loop>
         <source src="audio/baby.mp3" type="audio/mpeg">
     </audio>
@@ -87,8 +75,8 @@
         // Llama a la función para intentar reproducir el audio
         attemptAutoPlay();
 
-         // Agrega funcionalidad al botón para reproducir/pausar
-         playButton.addEventListener('click', function() {
+        // Agrega funcionalidad al botón para reproducir/pausar
+        playButton.addEventListener('click', function () {
             if (audio.paused) {
                 audio.play();
                 playButton.innerHTML = '⏸'; // Cambia el ícono a pause
@@ -99,7 +87,7 @@
         });
 
         // Pausa o reanuda la reproducción al cambiar la visibilidad de la página
-        document.addEventListener('visibilitychange', function() {
+        document.addEventListener('visibilitychange', function () {
             if (document.hidden) {
                 audio.pause();
                 playButton.innerHTML = '▶'; // Cambia el ícono a play cuando se pausa
@@ -112,14 +100,6 @@
             }
         });
     </script>
-
-    <!--Spotify
-    <iframe class="floating-frame" src="https://open.spotify.com/embed/track/0SzvmWfOhoxZVGrmvb56YL?utm_source=generator&theme=0" 
-            frameborder="0" allowfullscreen="" 
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-    </iframe>
-    -->
 
     <!--loading start-->
     <div class="loader">
@@ -229,7 +209,7 @@
             <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.8.1">
                 <ul>
                     <!-- SLIDE  -->
-                    <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    <li data-index="rs-5" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                         data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
                         data-thumb="assets/100x50_44515-slider-bg-3.jpg" data-rotate="0" data-saveperformance="off"
                         data-title="Slide 3" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
@@ -280,7 +260,7 @@
 
                     </li>
 
-                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                    <li data-index="rs-4" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
                         data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
                         data-thumb="assets/100x50_44515-slider-bg-3.jpg" data-rotate="0" data-saveperformance="off"
                         data-title="Slide 3" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
@@ -327,6 +307,57 @@
                             data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
                             data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                             style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 40px; font-weight: 400; color: #eaeaef; font-family: 'Montserrat', sans-serif;letter-spacing: 1px;text-transform: uppercase;">
+                            ¡Nos casamos!</div>
+
+                    </li>
+
+                    <li data-index="rs-3" data-transition="fade" data-slotamount="default" data-hideafterloop="0"
+                        data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300"
+                        data-thumb="assets/100x50_44515-slider-bg-3.jpg" data-rotate="0" data-saveperformance="off"
+                        data-title="Slide 3" data-param1="" data-param2="" data-param3="" data-param4="" data-param5=""
+                        data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+
+                        <!-- MAIN IMAGE -->
+                        <img src="images/DSC_8998.jpg" data-bgposition="center center" data-bgfit="cover"
+                            data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg" alt="slider-image"
+                            data-no-retina>
+                        <div class="slider-overlay"></div>
+
+
+                        <!-- LAYER NR. 11 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-1" id="slide-3-layer-1"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-80','-75','-74','-74']"
+                            data-fontsize="['18','18','16','16']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 5;font-size: 16px;white-space: nowrap;letter-spacing: 2.5px;line-height: 22px; font-weight: 500; color: #eaeaef;font-family: 'Montserrat', sans-serif;text-transform: uppercase">
+                            Save the date</div>
+
+                        <!-- LAYER NR. 12 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-3" id="slide-3-layer-2"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-8','-12','-12','-12']"
+                            data-fontsize="['80','70','60','50']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power2.easeOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 16px; font-weight: 500; color: #ffffff; letter-spacing: 0px;font-family: 'Dancing Script', cursive;">
+                            Rebeca & Jonathan</div>
+
+                        <!-- LAYER NR. 13 -->
+                        <div class="tp-caption   tp-resizeme rs-parallaxlevel-2" id="slide-3-layer-3"
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                            data-y="['middle','middle','middle','middle']" data-voffset="['70','55','55','55']"
+                            data-fontsize="['22','20','20','20']" data-width="none" data-height="none"
+                            data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                            data-frames='[{"delay":10,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":280,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"}]'
+                            data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]"
+                            data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            style="z-index: 7; white-space: nowrap; font-size: 18px; line-height: 40px; font-weight: 400; color: #eaeaef; font-family:'Montserrat', sans-serif;letter-spacing: 1px;text-transform: uppercase;">
                             ¡Nos casamos!</div>
 
                     </li>
@@ -452,13 +483,13 @@
                     </div>
 
                     <div class="about-image-holder">
-                        <img src="wedding/img/about-us-1.jpg" alt="Rebeca Jonathan">
+                        <img src="images/DSC_8884.jpg" alt="Rebeca Jonathan">
                     </div>
                     <div class="about-img-des">
                         <div class="inner-text">
-                            <p class="small-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                            <span class="quote">~ Love Quote ~</span>
+                            <p class="small-text">El amor verdadero no es algo que encuentras, es algo que construyes
+                                día a día.</p>
+                            <span class="quote">~ 🖤 ~</span>
                         </div>
                     </div>
 
@@ -470,120 +501,85 @@
                     </div>
 
                     <div class="about-image-holder">
-                        <img src="wedding/img/about-us-2.jpg" alt="Alex Ferdinand">
+                        <img src="images/DSC_8834.jpg" alt="Alex Ferdinand">
                     </div>
 
                     <div class="about-img-des">
                         <div class="inner-text">
-                            <p class="small-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-                            <span class="quote">~ Love Quote ~</span>
+                            <p class="small-text">El verdadero amor no se trata de encontrar a alguien con quien vivir,
+                                sino de encontrar con quien no quieras dejar de vivir.</p>
+                            <span class="quote">~ 🖤 ~</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--About sec end-->
+    <!--Novios sec end-->
 
-    <!--Counters sec Start-->
-    <div class="count-sec count-sec1" style="background: url('wedding/img/countdown1.jpg');">
+    <!--Date sec Start-->
+    <div class="count-sec count-sec1" style="background: url('images/DSC_9250-2.jpg');">
         <div class="count-overlay"></div>
         <div class="container">
             <div class="row text-left banner-2-content">
                 <div class="col-12">
                     <div class="text-home">
-                        <h1 class="heading">Reception</h1>
-                        <p class="text-white banner-2-content-p">Neque porro quisquam est qui dolorem ipsum</p>
-                        <p class="sub-heading text-grey">December 10Th 2020</p>
-                        <a href="#" class="btn white-and-black rounded-pill">Learn More</a>
+                        <h1 class="heading">¡Te esperamos!</h1>
+                        <br>
+                        <h1 class="heading">18 Enero 2025</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--Counters sec end-->
+    <!--Date sec end-->
 
 
-    <!--Speaker sec start-->
+    <!--Recepcion sec start-->
     <div class="speaker-sec" id="recepcion-sec">
         <div class="container">
             <div class="row text-center speakers-detail">
                 <div class="col-12">
-                    <span class="sub-heading">Looking Forward</span>
-                    <h4 class="large-heading">Our Best Friends Ever</h4>
+                    <h4 class="large-heading">Recepción</h4>
+                    <span class="fly-line"></span>
+                    <br>
+                    <h2 class="large-heading-2">Será un placer poder compartir contigo este día especial para nosotros
+                    </h2>
+                    <br>
+                    <h4 class="large-heading">¿Cúando y a qué hora?</h4>
+                    <h2 class="large-heading-2">18 de Enero 2025 a las 15:00 horas</h2>
+                    <br>
+                    <h5 class="large-heading">¿Donde?</h5>
+                    <h2 class="large-heading-2">Finca San Pedro</h2>
+                    <h3 class="large-heading-2">Bugambilias 2 Fracc, Brisas, Temixco, Morelos.</h3>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.783429825918!2d-99.22370342306134!3d18.85229498230669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cdd8cf8fdd2f77%3A0xd75bcd27c8767a40!2sFinca%20San%20Pedro%20Jard%C3%ADn%20Para%20Bodas!5e0!3m2!1ses-419!2smx!4v1725692573866!5m2!1ses-419!2smx"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center timeline-heading">
+                    <br>
+                    <span class="fly-line"></span>
+                    <span class="sub-heading">¡Solo falta!</span>
                     <span class="fly-line"></span>
                 </div>
+
+                <div style="left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto"><iframe
+                    src="https://www.tickcounter.com/widget/countdown/5669014"
+                    style="top:0; left:0; width:100%; height:100%; position:absolute; border:0; overflow:hidden"></iframe>
             </div>
-            <div class="speaker owl-carousel owl-theme text-center">
-                <div class="item speaker-info">
-                    <div class="image-holder">
-                        <img src="wedding/img/t1.jpg" alt="speaker">
-                        <div class="overlay d-flex justify-content-center align-items-center">
-                            <div class="speaker-links">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="speaker-name">James Anderson</h4>
-                    <p class="speaker-detail">Groomsmen</p>
-                </div>
-                <div class="item speaker-info">
-                    <div class="image-holder">
-                        <img src="wedding/img/t2.jpg" alt="speaker">
-                        <div class="overlay d-flex justify-content-center align-items-center">
-                            <div class="speaker-links">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="speaker-name">Bella Jones</h4>
-                    <p class="speaker-detail">Bridesmaid</p>
-                </div>
-                <div class="item speaker-info">
-                    <div class="image-holder">
-                        <img src="wedding/img/t3.jpg" alt="speaker">
-                        <div class="overlay d-flex justify-content-center align-items-center">
-                            <div class="speaker-links">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="speaker-name">Mark Smith</h4>
-                    <p class="speaker-detail">Groomsmen</p>
-                </div>
-                <div class="item speaker-info">
-                    <div class="image-holder">
-                        <img src="wedding/img/t4.jpg" alt="speaker">
-                        <div class="overlay d-flex justify-content-center align-items-center">
-                            <div class="speaker-links">
-                                <ul>
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <h4 class="speaker-name">Ash Kelly</h4>
-                    <p class="speaker-detail">Bridesmaid</p>
-                </div>
             </div>
+
+           
         </div>
     </div>
-    <!--Speaker sec end-->
+    <!--Recepcion sec end-->
 
     <!--portfolio sec start-->
     <div class="portfolio-sec" id="portfolio-sec" style="background: url('wedding/img/speaker_bg1.jpg');">
@@ -730,15 +726,6 @@
             </div>
 
 
-            <div style="left:0; width:100%; height:0; position:relative; padding-bottom:25%; margin:0 auto"><iframe
-                    src="https://www.tickcounter.com/widget/countdown/5669014"
-                    style="top:0; left:0; width:100%; height:100%; position:absolute; border:0; overflow:hidden"></iframe>
-            </div>
-
-            <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175"
-                style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
-                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-                src="https://embed.music.apple.com/mx/album/baby-im-yours/178359939?i=178360061&l=en-GB"></iframe>
 
         </div>
     </div>
@@ -923,79 +910,6 @@
     <!--testimonial sec end-->
 
 
-    <!--contact us sec start-->
-    <div class="contact-sec" id="contact-sec" style="background-image: url('wedding/img/speaker_bg1.jpg')">
-        <div class="row no-gutters">
-
-            <div class="col-12 location-details-contact">
-                <div class="row no-gutters">
-
-                    <div class="col-12 col-md-4 loc-details">
-                        <div class="contact-box d-flex justify-content-center align-items-center">
-                            <div class="media">
-                                <i class="las la-city"></i>
-                                <div class="media-body">
-                                    <h5 class="mt-0">City</h5>
-                                    <p>New York City</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 loc-details">
-                        <div class="contact-box d-flex justify-content-center align-items-center">
-                            <div class="media">
-                                <i class="las la-phone"></i>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Phone Number</h5>
-                                    <p>001 63165370895</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-4 loc-details">
-                        <div class="contact-box d-flex justify-content-center align-items-center">
-                            <div class="media">
-                                <i class="las la-map-marker"></i>
-                                <div class="media-body">
-                                    <h5 class="mt-0">Location</h5>
-                                    <p>123 Street,USA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12">
-                <div id="google-map" class="bg-light-gray map"></div>
-            </div>
-        </div>
-    </div>
-    <!--contact us sec end-->
-
-
-    <!--footer sec start-->
-    <footer class="footer-sec" id="footer-sec">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <div class="footer-icons d-flex">
-                        <a href="javascript:void(0)" class="wow fadeInUp"><i class="lab la-facebook-f"></i> </a>
-                        <a href="javascript:void(0)" class="wow fadeInDown"><i class="lab la-twitter"></i> </a>
-                        <a href="javascript:void(0)" class="wow fadeInUp"><i class="lab la-google"></i> </a>
-                        <a href="javascript:void(0)" class="wow fadeInDown"><i class="lab la-linkedin-in"></i> </a>
-                        <a href="javascript:void(0)" class="wow fadeInUp"><i class="lab la-instagram"></i> </a>
-                        <a href="javascript:void(0)" class="wow fadeInDown"><i class="las la-envelope"></i> </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!--footer sec end-->
-
-
     <!--modal window contact form start-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -1086,7 +1000,6 @@
     <script src="wedding/js/tilt.jquery.js"></script>
     <script src="vendor/js/wow.min.js"></script>
     <!--counter js links-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJScy7qJ156DWM8kJVG-ZrK0R7Kize2Jg "></script>
     <script src="wedding/js/map.js"></script>
     <script src="wedding/js/script.js"></script>
 </body>
