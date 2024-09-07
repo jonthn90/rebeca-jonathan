@@ -87,8 +87,8 @@
         // Llama a la función para intentar reproducir el audio
         attemptAutoPlay();
 
-        // Agrega funcionalidad al botón para reproducir/pausar
-        playButton.addEventListener('click', function() {
+         // Agrega funcionalidad al botón para reproducir/pausar
+         playButton.addEventListener('click', function() {
             if (audio.paused) {
                 audio.play();
                 playButton.innerHTML = '⏸'; // Cambia el ícono a pause
@@ -98,19 +98,17 @@
             }
         });
 
-        // Pausa la reproducción cuando la página pierde visibilidad
+        // Pausa o reanuda la reproducción al cambiar la visibilidad de la página
         document.addEventListener('visibilitychange', function() {
             if (document.hidden) {
                 audio.pause();
                 playButton.innerHTML = '▶'; // Cambia el ícono a play cuando se pausa
-            }
-        });
-
-        // Reanuda la reproducción si la página vuelve a ser visible
-        document.addEventListener('visibilitychange', function() {
-            if (!document.hidden && !audio.paused) {
-                audio.play();
-                playButton.innerHTML = '⏸'; // Cambia el ícono a pause si se reanuda
+            } else {
+                // Reanuda la reproducción si el audio estaba reproduciéndose
+                if (audio.paused) {
+                    audio.play();
+                    playButton.innerHTML = '⏸'; // Cambia el ícono a pause si se reanuda
+                }
             }
         });
     </script>
