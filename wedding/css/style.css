@@ -87,6 +87,13 @@ body {
     color:  #2f2f2f;
     margin-bottom: 15px;
 }
+.small-heading{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    color:  #2f2f2f;
+    margin-bottom: 15px;
+}
 .large-heading-2{
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Montserrat';
