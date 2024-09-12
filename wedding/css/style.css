@@ -57,6 +57,13 @@ body {
 .white-and-black{font-size: 12px;font-family: 'Montserrat', sans-serif;padding: 10px 25px;border:1px solid #ffffff;color: #FFFFFF;font-weight: 600;background-color: transparent; -webkit-transition:.8s ease;-o-transition:.8s ease;transition:.8s ease;}
 .white-and-black:hover{color: #ffffff;background-color: #b6a85a;;border:1px solid transparent;}
 
+.responsive-img {
+    max-width: 90%;  /* Ajusta este valor según el tamaño máximo que desees para la imagen */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    display: block;  /* Asegura que la imagen se comporte como bloque */
+    margin: 0 auto;  /* Centra la imagen horizontalmente */
+}
+
 .slider-overlay{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.31);
