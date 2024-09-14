@@ -120,9 +120,14 @@ body {
     /*font-family: 'Montserrat', sans-serif;*/
     font-family: 'Montserrat';
     font-weight: 500;
-    
     color:  #2f2f2f;
     margin-bottom: 15px;
+}
+.large-heading-black-b{
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color:  #2f2f2f;
 }
 .fly-line{
     display: block;
